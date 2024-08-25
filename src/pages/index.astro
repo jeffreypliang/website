@@ -22,14 +22,23 @@ import Section from "../components/Section.astro";
     <Section title="About">
       <p>
         I'm a software engineer at Databricks, improving the reliability and
-        performance of Lakeflow Pipelines and Delta Live Tables.
+        performance of <a
+          href="https://www.databricks.com/blog/introducing-databricks-lakeflow"
+          >Lakeflow Pipelines</a
+        > and <a href="https://www.databricks.com/product/delta-live-tables"
+          >Delta Live Tables</a
+        >.
       </p>
       <p>
         Previously, I completed two software engineering internships at Google,
         where I worked on Google Maps data infrastructure and Google Ads
-        Performance Max campaigns. I graduated with a bachelor's degree in
-        computer science from the University of California, Berkeley, where I
-        also TA'd the database systems course for four semesters.
+        <a
+          href="https://ads.google.com/intl/en_us/home/campaigns/performance-max/"
+          >Performance Max campaigns</a
+        >. I graduated with a bachelor's degree in computer science from the
+        University of California, Berkeley, where I also TA'd the <a
+          href="https://cs186berkeley.net/">database systems course</a
+        > for four semesters.
       </p>
       <p>
         In my free time, I enjoy reading, listening to podcasts, solving
@@ -45,3 +54,9 @@ import Section from "../components/Section.astro";
     </Section>
   </div>
 </Layout>
+
+<style>
+  a {
+    @apply text-blue-700 hover:text-blue-900;
+  }
+</style>
