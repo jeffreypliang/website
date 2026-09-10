@@ -1,3 +1,13 @@
+---
+import { execFileSync } from "node:child_process";
+
+const lastUpdated = execFileSync(
+  "git",
+  ["log", "-1", "--format=%cd", "--date=format:%B %Y"],
+  { encoding: "utf8" },
+).trim();
+---
+
 <footer class="w-full mt-auto pt-10 pb-5 text-center text-sm">
-  Last updated August 2024.
+  Last updated {lastUpdated}.
 </footer>
