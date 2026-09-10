@@ -11,8 +11,11 @@ import Section from "../components/Section.astro";
       <Image
         src={jeffrey}
         alt=""
-        class="h-48 w-48 rounded-full"
-        loading="eager"
+        layout="constrained"
+        width={192}
+        height={192}
+        class="rounded-full"
+        priority
       />
       <h1 class="font-sans font-semibold text-center text-3xl">
         Jeffrey Liang
